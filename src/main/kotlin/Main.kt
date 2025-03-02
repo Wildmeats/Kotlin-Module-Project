@@ -8,7 +8,7 @@ fun main() {
         archives.forEachIndexed { index, archive ->
             archiveItems.add(index + 1, archive.name)
         }
-        
+
         when (val choice = menu.showMenu(archiveItems, "Список архивов:")) {
             0 -> {
                 print("Введите имя архива: ")
